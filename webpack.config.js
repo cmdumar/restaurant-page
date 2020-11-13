@@ -19,6 +19,21 @@ module.exports = {
           "sass-loader",
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[hash:6].[ext]',
+              outputPath: 'images',
+              publicPath: 'images',
+              emitFile: true,
+              esModule: false,
+            },
+          },
+        ],
+      },
     ]
   }
 };
