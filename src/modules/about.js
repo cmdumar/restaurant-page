@@ -41,6 +41,8 @@ addressContainer.append(hours, address, time);
 
 container.append(imgHeader, addressContainer);
 
-export const aboutPage = () => {
+const aboutPage = () => {
   content.append(container);
 };
+
+export default aboutPage;

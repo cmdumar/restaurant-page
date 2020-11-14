@@ -1,4 +1,4 @@
-export const clearPage = () => {
+const clearPage = () => {
   const content = document.querySelector('#content');
 
   let child = content.firstElementChild;
@@ -8,3 +8,5 @@ export const clearPage = () => {
     child = content.firstElementChild;
   }
 };
+
+export default clearPage;

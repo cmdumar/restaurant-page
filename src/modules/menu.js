@@ -42,6 +42,8 @@ menuSection.append(menuList);
 
 container.append(imgHeader, menuSection);
 
-export const menuPage = () => {
+const menuPage = () => {
   content.append(container);
 };
+
+export default menuPage;

@@ -1,5 +1,7 @@
-import { navigation } from './nav';
+import navigation from './nav';
 
-export const pageLoad = () => {
+const pageLoad = () => {
   navigation();
 };
+
+export default pageLoad;

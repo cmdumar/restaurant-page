@@ -69,6 +69,29 @@ nav {
   }
 }
 
+.about-header {
+  background-image: url("./images/about-header.jpg");
+}
+
+.address-cont {
+  text-align: center;
+  font-family: serif;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    text-decoration: underline;
+    font-size: 15px;
+  }
+
+  span {
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
 .img-header {
   background-image: url("./images/menu-header.jpg");
   background-size: cover;
@@ -100,34 +123,6 @@ nav {
       font-size: small;
       text-transform: none;
     }
-  }
-}
-
-.about-header {
-  background-image: url("./images/about-header.jpg");
-  //  .img-title {
-  //    .title, p {
-  //      color: black;
-  //    }
-  //  }
-}
-
-.address-cont {
-  text-align: center;
-  font-family: serif;
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  p {
-    text-decoration: underline;
-    font-size: 15px;
-  }
-
-  span {
-    font-weight: bold;
-    font-style: italic;
   }
 }
 

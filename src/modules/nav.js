@@ -16,7 +16,9 @@ aboutLink.setAttribute('href', '#');
 aboutLink.id = 'about-page';
 aboutLink.textContent = 'About';
 
-export const navigation = () => {
+const navigation = () => {
   navContainer.append(homeLink, menuLink, aboutLink);
   content.appendChild(navContainer);
 };
+
+export default navigation;

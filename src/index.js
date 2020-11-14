@@ -1,10 +1,10 @@
-import { pageLoad } from './modules/pageLoad';
+import pageLoad from './modules/pageLoad';
 import './style.scss';
-import { navigation } from './modules/nav';
-import { homepage } from './modules/home';
-import { menuPage } from './modules/menu';
-import { aboutPage } from './modules/about';
-import { clearPage } from './modules/helpers';
+import navigation from './modules/nav';
+import homepage from './modules/home';
+import menuPage from './modules/menu';
+import aboutPage from './modules/about';
+import clearPage from './modules/helpers';
 
 pageLoad();
 homepage();

@@ -43,7 +43,9 @@ heading.classList.add('title');
 
 textContainer.append(heading);
 
-export const homepage = () => {
+const homepage = () => {
   home.append(textContainer, imgContainer);
   content.append(home);
 };
+
+export default homepage;
