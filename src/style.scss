@@ -69,13 +69,10 @@ nav {
   }
 }
 
-.about-header {
-  background-image: url("./images/about-header.jpg");
-}
-
 .address-cont {
   text-align: center;
   font-family: serif;
+  padding-bottom: 30px;
 
   h2 {
     font-size: 2rem;
@@ -96,7 +93,7 @@ nav {
   background-image: url("./images/menu-header.jpg");
   background-size: cover;
   background-position: center center;
-  height: 50vh;
+  height: 75vh;
   width: 100%;
   position: relative;
 
@@ -124,6 +121,10 @@ nav {
       text-transform: none;
     }
   }
+}
+
+.about-header {
+  background-image: url("./images/about-header.jpg");
 }
 
 .menu-section {
