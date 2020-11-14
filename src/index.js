@@ -7,6 +7,7 @@ import { aboutPage } from "./modules/about";
 import {clearPage} from "./modules/helpers";
 
 pageLoad();
+homepage();
 
 const home_btn = document.querySelector('#home-page');
 const menu_btn = document.querySelector('#menu-page');

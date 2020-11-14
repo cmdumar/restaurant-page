@@ -24,3 +24,86 @@ nav {
     }
   }
 }
+
+.title {
+  text-align: center;
+  font-size: 45px;
+}
+
+.img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px;
+  img {
+    max-width: 100%;
+  }
+}
+
+.img-header {
+  background-image: url("./images/menu-header.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  .img-title {
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    right: 3rem;
+    width: calc(100% - 6rem);
+    transform: translateY(-50%);
+    text-align: center;
+    .title, p {
+      color: white;
+      text-transform: uppercase;
+      font-weight: normal;
+      font-family: serif;
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 0;
+      font-size: small;
+      text-transform: none;
+    }
+  }
+}
+
+.about-header {
+  background-image: url("./images/about-header.jpg");
+  .img-title {
+    .title, p {
+      color: black;
+    }
+  }
+}
+
+.menu-section {
+  padding: 40px;
+  text-align: center;
+  ul {
+    list-style: none;
+    li {
+      font-family: serif;
+      letter-spacing: 1px;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
