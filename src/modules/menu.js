@@ -7,41 +7,41 @@ container.classList.add('menu-container');
 const imgHeader = document.createElement('div');
 imgHeader.classList.add('img-header');
 
-const heading_cont = document.createElement('div');
-heading_cont.classList.add('img-title');
+const headingCont = document.createElement('div');
+headingCont.classList.add('img-title');
 
 const heading = document.createElement('h2');
 heading.textContent = 'Menu';
 heading.classList.add('title');
 
-heading_cont.append(heading);
+headingCont.append(heading);
 
-imgHeader.append(heading_cont);
+imgHeader.append(headingCont);
 
-const menu_section = document.createElement('section');
-menu_section.classList.add('menu-section');
+const menuSection = document.createElement('section');
+menuSection.classList.add('menu-section');
 
-const menu_list = document.createElement('ul');
+const menuList = document.createElement('ul');
 
-const menu_arr = ['ESPRESSO', 'LATTE', 'HOT CHOCOLATE', 'ICED TEA', 'PECAN STICKY BUNS'];
-const price_arr = [2.75, 3.75, 3, 4.50, 2.75];
+const menuArr = ['ESPRESSO', 'LATTE', 'HOT CHOCOLATE', 'ICED TEA', 'PECAN STICKY BUNS'];
+const priceArr = [2.75, 3.75, 3, 4.50, 2.75];
 
-menu_arr.forEach((item, index) => {
-    const li = document.createElement('li');
-    const name = document.createElement('p');
-    const price = document.createElement('span');
+menuArr.forEach((item, index) => {
+  const li = document.createElement('li');
+  const name = document.createElement('p');
+  const price = document.createElement('span');
 
-    name.textContent = item;
-    price.textContent = price_arr[index];
+  name.textContent = item;
+  price.textContent = priceArr[index];
 
-    li.append(name, price);
-    menu_list.append(li);
+  li.append(name, price);
+  menuList.append(li);
 });
 
-menu_section.append(menu_list);
+menuSection.append(menuList);
 
-container.append(imgHeader, menu_section);
+container.append(imgHeader, menuSection);
 
 export const menuPage = () => {
-    content.append(container);
-}
+  content.append(container);
+};

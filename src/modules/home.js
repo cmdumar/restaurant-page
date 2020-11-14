@@ -1,6 +1,6 @@
-import imgLogo from '../images/home.jpg'
-import imgPrimary from '../images/imgprimary.jpg'
-import imgSec from '../images/imgsec.jpg'
+import logo from '../images/home.jpg';
+import primary from '../images/imgprimary.jpg';
+import imgSec from '../images/imgsec.jpg';
 
 
 const content = document.querySelector('#content');
@@ -10,26 +10,30 @@ home.classList.add('home-container');
 const imgContainer = document.createElement('div');
 imgContainer.classList.add('img-container');
 
-const grid_div_1 = document.createElement('div');
-grid_div_1.classList.add('grid-1');
+const gridDiv1 = document.createElement('div');
+gridDiv1.classList.add('grid-1');
 
-const img_logo = document.createElement('img');
-img_logo.src = imgLogo;
+const imgLogo = document.createElement('img');
+imgLogo.src = logo;
 
-grid_div_1.append(img_logo);
+gridDiv1.append(imgLogo);
 
-const grid_div_2 = document.createElement('div');
-grid_div_2.classList.add('grid-2');
+const gridDiv2 = document.createElement('div');
+gridDiv2.classList.add('grid-2');
 
-const img_primary = document.createElement('img');
-img_primary.src = imgPrimary;
+const gridDiv3 = document.createElement('div');
+gridDiv3.classList.add('grid-3');
 
-const img_secondary = document.createElement('img');
-img_secondary.src = imgSec;
+const imgPrimary = document.createElement('img');
+imgPrimary.src = primary;
 
-grid_div_2.append(img_primary, img_secondary);
+const imgSecondary = document.createElement('img');
+imgSecondary.src = imgSec;
 
-imgContainer.append(grid_div_1, grid_div_2);
+gridDiv2.append(imgPrimary);
+gridDiv3.append(imgSecondary);
+
+imgContainer.append(gridDiv1, gridDiv2, gridDiv3);
 
 const textContainer = document.createElement('div');
 
@@ -40,6 +44,6 @@ heading.classList.add('title');
 textContainer.append(heading);
 
 export const homepage = () => {
-    home.append(textContainer, imgContainer);
-    content.append(home);
-}
+  home.append(textContainer, imgContainer);
+  content.append(home);
+};
